@@ -11,7 +11,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-
+    int counter= 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,8 +19,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
    public void clickme(View view){
-        Button myButton = findViewById(R.id.btn);
-        myButton.setText("Oh, yea, i've been clicked");
+        Button btn = findViewById(R.id.btn);
+        counter++;
+        btn.setText("This is click number:" + counter);
 
 
    }
