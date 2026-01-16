@@ -21,13 +21,19 @@ public class MainActivity extends AppCompatActivity {
    public void clickme(View view){
         Button btn = findViewById(R.id.btn);
         counter++;
-        btn.setText("This is click number:" + counter);
+       if (counter<=6){
+          btn.setText("This is click number:" + counter);}
+            else {
+               btn.setText("Enough to click. go to new stats!");
+               counter = 0;
 
+           }
+       }
 
    }
 
 
- }
+
 
 
 
