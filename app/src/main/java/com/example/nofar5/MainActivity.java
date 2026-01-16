@@ -21,10 +21,10 @@ public class MainActivity extends AppCompatActivity {
    public void clickme(View view){
         Button btn = findViewById(R.id.btn);
         counter++;
-       if (counter<=6){
+       if (counter<=7){
           btn.setText("This is click number:" + counter);}
             else {
-               btn.setText("Enough to click. go to new stats!");
+               btn.setText("BOOM!");
                counter = 0;
 
            }
